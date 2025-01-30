@@ -16,7 +16,7 @@ def fetch_page(page_number):
 # Function to extract Data from a single page
 def extract_codes(soup):
     # Replace 'your-css-selector-here' with the actual CSS selector
-    codes = soup.find_all("CSS_SELECTOR_HERE")
+    codes = soup.find_all("CSS_SELECTOR")
     return [code.text.strip() for code in codes]
 
 # Main function to scrape all codes
